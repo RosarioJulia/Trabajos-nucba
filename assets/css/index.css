@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background: rgb(121, 211, 148);
+}
+
+div {
+    width: 50%;
+}
+
+img {
+    width: 65px;
+    height: 65px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li:last-child {
+    margin-right: 10%;
+}
+
+ul li {
+    font-weight: bold;
+    margin-left: 5%;
+}
