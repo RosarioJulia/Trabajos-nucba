@@ -4,29 +4,54 @@ body {
 
 header {
     display: flex;
-    background: rgb(121, 211, 148);
 }
 
-div {
+header div {
     width: 50%;
 }
 
-img {
-    width: 65px;
+header img {
+    width: 130px;
     height: 65px;
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
 
-ul li:last-child {
+header ul li:last-child {
     margin-right: 10%;
 }
 
-ul li {
+header ul li {
     font-weight: bold;
     margin-left: 5%;
+}
+
+div.content div.home {
+    height: 87%;
+}
+
+div.content div.home div {
+    display: flex
+}
+
+div.content div.institutional {
+    background: radial-gradient(green, transparent);
+    height: 87%;
+    display: flex;
+}
+
+div.content div.institutional h3 {
+    text-align: center;
+}
+
+div.content div.institutional div {
+    width: 50%;
+}
+
+div.content div.contact {
+    text-align: center;
 }
