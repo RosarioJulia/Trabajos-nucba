@@ -1,21 +1,30 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Ejercicio 2</title>
         <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     </head>
 
     <body>
         <header>
-            <div>
+            <div class="col-1">
                 <img src="./assets/img/logo.png" alt="Fox" />
             </div>
 
-            <div>
+            <div class="col-1">
                 <nav>
-                    <ul>
+                    <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+                    <input type="checkbox" id="toggle-menu" />
+
+                    <ul id="menu-list" onclick="document.getElementById('toggle-menu').checked = false">
                         <li><a href="#home">Inicio</a></li>
 
                         <li><a href="#institutional">Institucional</a></li>
+
+                        <li><a href="#benefits">Beneficios</a></li>
 
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
@@ -29,7 +38,7 @@
             </div>
 
             <div id="institutional" class="institutional">
-                <div>
+                <div class="col-1">
                     <h3>
                         MI JARDÍN es TU JARDÍN
                     </h3>
@@ -41,8 +50,40 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="col-1">
                     <img src="./assets/img/institucional/1.jpeg" width="100%" height="100%" alt="Institucional1" />
+                </div>
+            </div>
+
+            <div id="benefits" class="benefits">
+                <h1>Nuestros beneficios</h1>
+
+                <p>Aqui veremos los beneficios que ofrecemos en nuestro Jardín</p>
+
+                <div class="cards">
+                    <div class="card col-1">
+                        <img src="./assets/img/benefits/1.png" alt="Benefit 1" />
+
+                        <h2>Descuento pago</h2>
+
+                        <p>Descuento del 5% por pagar antes del 10 de cada mes</p>
+                    </div>
+
+                    <div class="card col-1">
+                        <img src="./assets/img/benefits/2.png" alt="Benefit 2" />
+
+                        <h2>Descuento hermano</h2>
+
+                        <p>Descuento del 15% si ya viene un hermano/a a la institución</p>
+                    </div>
+
+                    <div class="card col-1">
+                        <img src="./assets/img/benefits/3.png" alt="Benefit 3" />
+
+                        <h2>Servicio médico</h2>
+
+                        <p>La institución cuenta con un servicio médico ante cualquier eventualidad</p>
+                    </div>
                 </div>
             </div>
 
@@ -50,6 +91,11 @@
                 <p>Teléfono: 1111 111111</p>
                 <p>Email: mijardin@jardin.com</p>
             </div>
+
+            <footer>
+                <img src="./assets/img/logo.png" alt="Fox" />
+                <p>Mi Jardín</p>
+            </footer>
         </div>
     </body>
 </html>

@@ -3,7 +3,11 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 header div {
@@ -16,6 +20,7 @@ header img {
 }
 
 header ul {
+    gap: 20%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -30,8 +35,17 @@ header ul li {
     margin-left: 5%;
 }
 
+header nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+}
+
 div.content div.home {
     height: 87%;
+    padding-top: 9%;
 }
 
 div.content div.home div {
@@ -52,6 +66,72 @@ div.content div.institutional div {
     width: 50%;
 }
 
+div.content div.benefits {
+    text-align: center;
+}
+
+div.content div.benefits div.cards {
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+
+div.content div.benefits div.cards div.card {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 1%;
+}
+
+div.content div.benefits div.cards div.card img {
+    width: 10%;
+    height: 25%;
+}
+
 div.content div.contact {
     text-align: center;
+}
+
+footer {
+    border-top: 1px black solid;
+    text-align: center;
+}
+
+[for="toggle-menu"] i {
+    font-size: 30px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    div.content div.benefits div.cards {
+        display: block;
+    }
+
+    .col-1 {
+        width: 100%!important;
+    }
+
+    header ul {
+        width: 100%;
+        height: calc(100vh - 100%);
+        position: absolute;
+        top: 53px;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        background-color: white;
+    }
+
+    [for="toggle-menu"] i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ #menu-list {
+        display: flex;
+    }
 }
